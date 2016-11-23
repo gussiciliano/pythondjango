@@ -1,0 +1,34 @@
+import django
+
+
+python3.5 -c "import django; print(django.__path__)"
+
+
+sudo django-admin.py startproject python101
+
+
+cd python101
+
+
+sudo python3.5 manage.py runserver
+
+127.0.0.1:8000
+--
+
+
+python3.5 manage.py migrate
+
+
+ python3.5 manage.py createsuperuser
+
+
+---
+
+
+python3.5 manage.py makemigrations ecommercefalopa
+
+
+python3.5 manage.py sqlmigrate ecommercefalopa 0001
+
+
+python3.5 manage.py migrate ecommercefalopa 0001

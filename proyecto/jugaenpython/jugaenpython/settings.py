@@ -57,8 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-			'C:/dev/pythondjango/jugaenpython/batallanaval/template',
-            '/home/python/Escritorio/tpdjango/jugaenpython/batallanaval/template'
+			'D:/UTN/PYTHON/pythondjango/proyecto/jugaenpython/batallanaval/template'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
