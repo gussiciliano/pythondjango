@@ -11,6 +11,9 @@ def indexbootstrap(request):
 def posicionamiento(request):
     return render(request, 'posicionamiento.html')
 
+def guardarposicionamiento(request):
+    return render(request, 'index.html', {"celdas":request.POST.getlist('celda[]')})
+
 def noEncontrada(request):
     html = "<html><body>A donde queres ir?</body></html>"
     return HttpResponse(html)
