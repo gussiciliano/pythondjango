@@ -5,6 +5,14 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
 
+def batalla(request):
+    return render(request, 'batalla.html')
+
+def buscarunrival(request):
+    #TODO: BUSCAR UN RIVAL
+    #Luego de encontrar el rival enviar a posicionamiento
+    return posicionamiento(request)
+
 def indexbootstrap(request):
     return render(request, 'indexbootstrap.html')
 
@@ -12,7 +20,8 @@ def posicionamiento(request):
     return render(request, 'posicionamiento.html')
 
 def guardarposicionamiento(request):
-    return render(request, 'index.html', {"celdas":request.POST.getlist('celda[]')})
+    #TODO: ver como meter ambos
+    return render(request, 'batalla.html', {"celdas":request.POST.getlist('celda[]')})
 
 def noEncontrada(request):
     html = "<html><body>A donde queres ir?</body></html>"

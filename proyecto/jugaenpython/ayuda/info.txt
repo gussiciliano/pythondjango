@@ -12,6 +12,8 @@ cd python101
 
 sudo python3.5 manage.py runserver
 
+cd D:\UTN\PYTHON\pythondjango\proyecto\jugaenpython
+python manage.py runserver
 127.0.0.1:8000
 --
 
